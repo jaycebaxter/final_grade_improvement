@@ -35,7 +35,6 @@ PROMPT_10 = ("Please enter your grade for Quiz 3 - Selection: ")
 PROMPT_11 = ("Please enter your grade for Quiz 4 - Iteration: ")
 PROMPT_12 = ("Please enter your grade for Quiz 5 - Arrays: ")
 
-
 # Defining a function that will ask the user for their grade, loop until input is appropriate, and give errors if necessary
 def get_grade(prompt):
     while True:
@@ -53,87 +52,69 @@ def get_grade(prompt):
 
             else:
                 return user_input
-            
+
         except ValueError:
             print("Input must be numeric.")
 
-# Defining a function that will append class exercises to the appropriate lists
-def CE_append():
-    grade.append(user_input)
-    class_exercise.append(user_input)
-
-# Defining a function that will append tests to the appropriate lists
-def test_append():
-    grade.append(user_input)
-    test.append(user_input)
-
-# Defining a function that will append assignments to the appropriate lists
-def assignment_append():
-    grade.append(user_input)
-    assignment.append(user_input)
-
-# Defining a function that will append quizzes to the appropriate lists
-def quiz_append():
-    grade.append(user_input)
-    quiz.append(user_input)
-
-
 # Getting input for Class Exercise 1 - Planning an Application and appending to grade list and class exercise list
 user_input = get_grade(PROMPT_1)
-CE_append()
+grade.append(user_input)
+class_exercise.append(user_input)
 
 # Getting input for Class Exercise 2 - Numeric and String Data and appending to grade list and class exercise list
 user_input = get_grade(PROMPT_2)
-CE_append()
+grade.append(user_input)
+class_exercise.append(user_input)
 
 # # Getting input for Class Exercise 3 - Selection and appending to grade list and class exercise list
 user_input = get_grade(PROMPT_3)
-CE_append()
+grade.append(user_input)
+class_exercise.append(user_input)
 
 # # Getting input for Class Exercise 4 - Iteration and appending to grade list and class exercise list
 user_input = get_grade(PROMPT_4)
-CE_append()
+grade.append(user_input)
+class_exercise.append(user_input)
 
 # Getting input for Test 1 - Theory and appending to grade list and test list
 user_input = get_grade(PROMPT_5)
-test_append()
+grade.append(user_input)
+test.append(user_input)
 
 # Getting input for Test 1 - Practical and appending to grade list and test list
 user_input = get_grade(PROMPT_6)
-test_append()
+grade.append(user_input)
+test.append(user_input)
 
 # Getting input for Assignment 1 - Iteration and appending to grade list and assignment list
 user_input = get_grade(PROMPT_7)
-assignment_append()
-
+grade.append(user_input)
+assignment.append(user_input)
 
 # Getting input for Quiz 1 - Planning an Application and appending to grade list and quiz list
 user_input = get_grade(PROMPT_8)
-quiz_append()
-
+grade.append(user_input)
+quiz.append(user_input)
 
 # Getting input for Quiz 2 - Numeric and String Data and appending to grade list and quiz list
 user_input = get_grade(PROMPT_9)
-quiz_append()
-
-
+grade.append(user_input)
+quiz.append(user_input)
 
 # Getting input for Quiz 3 - Selection and appending to grade list and quiz list
 user_input = get_grade(PROMPT_10)
-quiz_append()
-
-
+grade.append(user_input)
+quiz.append(user_input)
 
 # Getting input for Quiz 4 - Iteration and appending to grade list and quiz list
 user_input = get_grade(PROMPT_11)
-quiz_append()
-
+grade.append(user_input)
+quiz.append(user_input)
 
 # Getting input for Quiz 5 - Arrays and appending to grade list and quiz list
 user_input = get_grade(PROMPT_12)
-quiz_append()
-
-
+grade.append(user_input)
+quiz.append(user_input)
 
 # Calculating the average of all assignments (there is only 1)
 assignment_calc = float(sum(assignment))
